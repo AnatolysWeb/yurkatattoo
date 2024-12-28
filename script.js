@@ -6,7 +6,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const message = document.getElementById("message").value;
 
     if (name && email && message) {
-        alert("Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.");
+        alert("Gracias por tu mensaje. Me pondre en contacto contigo pronto.");
     } else {
         alert("Por favor, completa todos los campos.");
     }

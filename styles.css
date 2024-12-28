@@ -46,7 +46,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('https://via.placeholder.com/1600x600') no-repeat center center;
+    background: url("TemaDePagina/fondo.png") no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
