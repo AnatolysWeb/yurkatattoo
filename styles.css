@@ -44,24 +44,98 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Botones de servicios */
+.service-card .btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+/* Estilo para las tarjetas como botones */
+.service-card {
+    display: block;
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: inherit; /* Mantener el color de texto heredado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+
 /* Hero Section */
 #hero {
     background: url("TemaDePagina/fondo.png") no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 150px 0;
+    height: 80vh; /* Ocupa toda la altura de la ventana */
+    min-height: 400px; /* Altura mínima para pantallas más pequeñas */
+    max-height: 1000px; /* Altura máxima para pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
+/* Estilo para el encabezado h2 en la sección Hero */
 #hero h2 {
-    font-size: 3rem;
+    font-family: 'Uncial Antiqua', cursive; /* Fuente gótica */
+    color: white; /* Texto en blanco */
+    font-size: 4rem;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.8); /* Sombras oscuras y brillantes */
+    letter-spacing: 2px; /* Espaciado entre letras para un estilo más impactante */
+    font-weight: bold; /* Estilo negrita para mayor énfasis */
 }
+
+/* Si deseas usar una fuente personalizada (por ejemplo, descargada de DaFont) */
+@font-face {
+    font-family: 'DarkMetal'; /* Nombre de la fuente */
+    src: url('path_to_your_font_file.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+
 
 #hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    background-color: black; /* Fondo negro */
+    color: white; /* Color de texto blanco para contraste */
+    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra suave para darle un efecto más destacado */
 }
+
 
 #hero .btn {
     background-color: #333;
