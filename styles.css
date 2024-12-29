@@ -151,19 +151,24 @@ header nav ul li a:hover {
 
 /* Services Section */
 #services {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 300px 20px;
+    background-image: url("TemaDePagina/fondoservicios.png"); /* Fondo de imagen */
+    background-size: 100% 100%; /* Estira la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     text-align: center;
+    color: white; /* Cambié el color del texto a blanco para que sea legible sobre la imagen */
+    min-height: 500px; /* Asegura que la sección tenga una altura mínima */
 }
 
 #services h2 {
     margin-bottom: 30px;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .service-card {
     display: inline-block;
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.8); /* Fondo ligeramente transparente para los cards */
     padding: 20px;
     margin: 10px;
     width: 30%;
