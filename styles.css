@@ -52,12 +52,41 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente el contenido */
+    justify-content: center;  /* Centra el contenido horizontalmente */
     background: url("TemaDePagina/fondo.png") no-repeat center center;
     background-size: cover;
-    text-align: center;
-    padding: 200px 20px;
+    padding: 90px 100px;
     color: white;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+/* Texto centralizado en la parte superior */
+#hero .hero-text {
+    position: absolute;
+    top: 20px;  /* Ajusta la distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#hero .image-container {
+    flex: 1;  /* La imagen ocupa el 50% */
+    background: url("TemaDePagina/profecional.png") no-repeat center center;
+    background-size: contain;  /* Ajusta la imagen dentro del contenedor */
+    height: 400px;  /* Altura ajustable según lo que necesites */
+    border-radius: 10px;
+}
+
+#hero .text-container {
+    flex: 1;  /* El texto ocupa el 50% */
+    padding: 20px;
+    text-align: left;
 }
 
 #hero h2 {
@@ -85,6 +114,7 @@ header nav ul li a:hover {
 #hero .btn:hover {
     background-color: #e76f51;
 }
+
 
 /* Services Section */
 #services {
