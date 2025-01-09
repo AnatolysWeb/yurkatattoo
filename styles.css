@@ -52,7 +52,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url("TemaDePagina/fondo.webp") no-repeat center center;
+    background: url("TemaDePagina/fondo.png") no-repeat center center;
     background-size: cover;
     text-align: center;
     padding: 200px 20px;
