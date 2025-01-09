@@ -80,12 +80,21 @@ header nav ul li a:hover {
     background: url("TemaDePagina/profecional.png") no-repeat center center;
     background-size: contain;  /* Ajusta la imagen dentro del contenedor */
     height: 400px;  /* Altura ajustable según lo que necesites */
-    border-radius: 10px;
+    border-radius: 10px;  /* Borde redondeado */
+    border: 5px solid #333;  /* Borde oscuro alrededor de la imagen */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);  /* Sombra oscura y difusa alrededor */
+    transition: all 0.3s ease;  /* Transición suave para cambios visuales */
 }
 
+#hero .image-container:hover {
+    transform: scale(1.01);  /* Escala ligeramente la imagen al pasar el mouse */
+    box-shadow: 0 6px 30px #e76f51;  /* Sombra más intensa al hacer hover */
+}
+
+
 #hero .text-container {
-    flex: 1;  /* El texto ocupa el 50% */
-    padding: 20px;
+    flex: 2;  /* El texto ocupa el 50% */
+    padding: 30px;
     text-align: left;
 }
 
