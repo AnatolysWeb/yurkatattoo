@@ -93,20 +93,20 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url("TemaDePagina/fondo.png") no-repeat center center;
-    background-size: cover;
+    background: url("TemaDePagina/fondo.png") no-repeat center center; /* No repetir y centrar la imagen */
+    background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+    background-attachment: fixed; /* Fijar el fondo al desplazarse */
     color: white;
     text-align: center;
     padding: 150px 0;
-    height: 80vh; /* Ocupa toda la altura de la ventana */
-    min-height: 400px; /* Altura mínima para pantallas más pequeñas */
-    max-height: 1000px; /* Altura máxima para pantallas grandes */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+
 
 /* Estilo para el encabezado h2 en la sección Hero */
 #hero h2 {
@@ -117,12 +117,6 @@ header nav ul li a:hover {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.8); /* Sombras oscuras y brillantes */
     letter-spacing: 2px; /* Espaciado entre letras para un estilo más impactante */
     font-weight: bold; /* Estilo negrita para mayor énfasis */
-}
-
-/* Si deseas usar una fuente personalizada (por ejemplo, descargada de DaFont) */
-@font-face {
-    font-family: 'DarkMetal'; /* Nombre de la fuente */
-    src: url('path_to_your_font_file.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
 }
 
 
@@ -151,14 +145,17 @@ header nav ul li a:hover {
 
 /* Services Section */
 #services {
-    padding: 300px 20px;
-    background-image: url("TemaDePagina/fondoservicios.png"); /* Fondo de imagen */
-    background-size: 100% 100%; /* Estira la imagen para cubrir todo el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background: url("TemaDePagina/fondo.png") no-repeat center center; /* No repetir y centrar la imagen */
+    background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+    background-attachment: fixed; /* Fijar el fondo al desplazarse */
+    color: white;
     text-align: center;
-    color: white; /* Cambié el color del texto a blanco para que sea legible sobre la imagen */
-    min-height: 500px; /* Asegura que la sección tenga una altura mínima */
+    padding: 150px 0;
+    height: auto; /* Altura dinámica */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #services h2 {
@@ -166,9 +163,10 @@ header nav ul li a:hover {
     font-size: 3rem;
 }
 
+/* Fondo transparente para las tarjetas */
 .service-card {
     display: inline-block;
-    background-color: rgba(238, 238, 238, 0.8); /* Fondo ligeramente transparente para los cards */
+    background-color: #000000; /* Fondo blanco semitransparente */
     padding: 20px;
     margin: 10px;
     width: 30%;
@@ -184,6 +182,7 @@ header nav ul li a:hover {
 .service-card p {
     font-size: 1rem;
 }
+
 
 /* Portfolio Section */
 #portfolio {
