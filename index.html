@@ -3,89 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yurka Tattoo - Tatuador Profesional</title>
+    <title>Tatuador Profesional</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>YurkaTattoo</h1>
+            <h1>Tatuador Profesional</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#services">Servicios</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <!-- Frase centralizada -->
-        <div class="hero-text">
-            <h2>Arte que vive en tu piel</h2>
-        </div>
-    
-        <div class="image-container"></div> <!-- Imagen a la izquierda -->
-        <div class="text-container">
-            <p>Bienvenido a Yurka Tattoo – Arte sobre tu piel</p>
-            <p>"Cada tatuaje cuenta una historia única. Déjanos plasmar tu arte, tu esencia."</p>
-            <p>En nuestra página encontrarás ejemplos de trabajos previos, información sobre nuestro estilo y la posibilidad de agendar tu cita con un profesional que entiende la importancia de un buen diseño y una técnica impecable.</p>
-            <a href="#services" class="btn">Conoce los servicios</a>
+        <div class="hero-content">
+            <h2>El arte del tatuaje en su máxima expresión</h2>
+            <p>Transforma tu piel con diseños únicos y personalizados.</p>
+            <a href="#contact" class="cta-button">Contáctame</a>
         </div>
     </section>
-    
-    <section id="services">
-        <h2>Servicios</h2>
-        <div class="service-container">
-            <div class="service-card">
-                <img src="TemaDePagina/tatuajes-personalizados.png" alt="Tatuajes Personalizados" style="width:100%; border-radius:10px; margin-bottom:15px;">
-                <h3>Tatuajes Personalizados</h3>
-                <p>Tatuajes únicos que cuentan tu historia.</p>
-            </div>
-            <div class="service-card">
-                <img src="TemaDePagina/cover-ups.png" alt="Cover-ups" style="width:100%; border-radius:10px; margin-bottom:15px;">
-                <h3>Cover-ups</h3>
-                <p>Transformamos tatuajes no deseados en arte inolvidable.</p>
-            </div>
-            <div class="service-card">
-                <img src="TemaDePagina/consultas-diseño.png" alt="Consultas de Diseño" style="width:100%; border-radius:10px; margin-bottom:15px;">
-                <h3>Consultas de Diseño</h3>
-                <p>Te asesoramos para crear el diseño perfecto.</p>
-            </div>
-        </div>
-    </section>
-    
 
-    <section id="portfolio">
+    <section id="about" class="section">
+        <h2>Sobre mí</h2>
+        <p>Soy un tatuador profesional con más de 10 años de experiencia, especializado en estilos únicos y diseños personalizados.</p>
+    </section>
+
+    <section id="portfolio" class="section">
         <h2>Portafolio</h2>
-        <div class="portfolio-gallery">
-            <img src="portafolio/foto1.png" alt="Tatuaje 1">
-            <img src="portafolio/foto2.png" alt="Tatuaje 2">
-            <img src="portafolio/foto3.png" alt="Tatuaje 3">
-            <img src="portafolio/foto4.png" alt="Tatuaje 4">
-            <img src="portafolio/foto5.png" alt="Tatuaje 5">
-            <img src="portafolio/foto6.png" alt="Tatuaje 6">
-            <img src="portafolio/foto7.png" alt="Tatuaje 7">
-            <img src="portafolio/foto8.png" alt="Tatuaje 8">
-            <img src="portafolio/foto9.png" alt="Tatuaje 9">
+        <div class="gallery">
+            <!-- Aquí puedes agregar imágenes de los tatuajes -->
+            <img src="tatuaje1.jpg" alt="Tatuaje 1">
+            <img src="tatuaje2.jpg" alt="Tatuaje 2">
+            <img src="tatuaje3.jpg" alt="Tatuaje 3">
         </div>
     </section>
 
-    <section id="contact">
+    <section id="services" class="section">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Tatuajes personalizados</li>
+            <li>Cover-ups</li>
+            <li>Consultas gratuitas</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
         <h2>Contacto</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Email" required>
-            <textarea id="message" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
+        <form>
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Yurka Tattoo | Todos los derechos reservados</p>
+        <p>&copy; 2025 Tatuador Profesional</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

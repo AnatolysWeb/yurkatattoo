@@ -1,13 +1,16 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+// Animación de desplazamiento para que los elementos sean visibles al hacer scroll
+document.addEventListener("scroll", function () {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        const sectionPosition = section.getBoundingClientRect().top;
+        if (sectionPosition < window.innerHeight - 100) {
+            section.classList.add('visible');
+        }
+    });
+});
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    if (name && email && message) {
-        alert("Gracias por tu mensaje. Me pondre en contacto contigo pronto.");
-    } else {
-        alert("Por favor, completa todos los campos.");
-    }
+// Formulario de contacto (agregar validación)
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Mensaje enviado con éxito');
 });
